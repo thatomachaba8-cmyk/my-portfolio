@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<header class="hero">
+  <div class="hero-container">
+
+      <section id="home">
+
+      <div class="hero-text"></div>
+
+      <h1>Hi, I'm Thato</h1>
+      <h2><span id="typing"></span></h2>
+      <p>I create clean and responsive websites for businesses.</p>
+      
+    </section>
+   
+    </div>
+
+    <div class="hero-image">
+      <img src="https://raw.githubusercontent.com/thatomachaba8-cmyk/my-portfolio/1be1947073594efd425538d2db8e510b9c7c9466/me.jpg" alt="My Photo">
+        </div>
+
+<nav class="navbar">
+  <div class="nav-container">
+
+    <h2 class="logo">Thato</h2>
+
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul>
+
+    <a href="#contact" class="nav-btn">Hire Me</a>
+    
+     
+
+  </div>
+</nav>
+
+  </div>
+</header>
+
+
+<section id="about">
+<h2>About Me</h2>
+<p>
+Hi, Im a university student from South Africa who enjoys turning ideas into real websites. I specialize in HTML, CSS, and JavaScript, and Im focused on creating responsive and visually appealing designs. When Im not coding, Im learning new technologies and working on projects to sharpen my skills.
+</p>
+</section>
+
+<section id="services">
+  <div class="service-card">
+  <i class="fas fa-laptop-code"></i>
+  <h3>Website Design</h3>
+  <p>I design modern and clean websites for businesses.</p>
+  <h4 class="price">From R500</h4>
+  <a href="#contact" class="service-btn">Get Started</a>
+</div>
+
+<div class="service-card featured">
+  <span class="badge">Most Popular</span>
+
+  <i class="fas fa-code"></i>
+  <h3>Website Development</h3>
+  <p>I build fast and responsive websites using HTML, CSS and JavaScript.</p>
+  <h4 class="price">From R800</h4>
+  <a href="#contact" class="service-btn">Get Started</a>
+</div>
+
+<div class="service-card">
+  <i class="fas fa-screwdriver-wrench"></i>
+  <h3>Website Fixes</h3>
+  <p>I fix bugs and improve existing websites.</p>
+  <h4 class="price">From R300</h4>
+  <a href="#contact" class="service-btn">Get Started</a>
+</div>
+</section>
+
+<section id="projects" class="projects">
+
+  <h2 class="project-text">Projects</h2>
+
+  <div class="projects-container">
+
+    <div class="project" onclick="openModal('Portfolio Website', 'A personal developer portfolio built with HTML, CSS and JavaScript.')">
+      <i class="fa-solid fa-user"></i>
+      <h3>Portfolio Website</h3>
+      <p>Personal developer portfolio.</p>
+    </div>
+
+    <div class="project" onclick="openModal('Barber Shop Website', 'Modern barber shop website for small businesses.')">
+      <i class="fa-solid fa-scissors"></i>
+      <h3>Barber Shop Website</h3>
+      <p>Dark themed business site.</p>
+      <a href="https://thatomachaba8-cmyk.github.io/barber-shop-website/" target="_blank">View Project</a>
+    </div>
+
+    <div class="project" onclick="openModal('Gym Website', 'Fitness gym website with modern UI.')">
+      <i class="fa-solid fa-dumbbell"></i>
+      <h3>Gym Website</h3>
+      <p>Fitness business website.</p>
+      <a href="https://thatomachaba8-cmyk.github.io/gym-website/" target="_blank">View Project</a>
+    </div>
+
+    <div class="project" onclick="openModal('Salon Website', 'Beauty salon website design.')">
+      <i class="fa-solid fa-scissors"></i>
+      <h3>Salon Website</h3>
+      <p>Beauty business website.</p>
+      <a href="https://thatomachaba8-cmyk.github.io/salon-website/" target="_blank">View Project</a>
+    </div>
+
+    <div class="project" onclick="openModal('Restaurant Website', 'Restaurant landing page with modern UI.')">
+      <i class="fa-solid fa-utensils"></i>
+      <h3>Restaurant Website</h3>
+      <p>Food business website.</p>
+      <a href="https://thatomachaba8-cmyk.github.io/restaurant-website/" target="_blank">View Project</a>
+    </div>
+
+    <div class="project" onclick="openModal('To-Do App', 'Task manager app built with JavaScript.')">
+      <i class="fa-solid fa-list-check"></i>
+      <h3>To-Do App</h3>
+      <p>Task manager app.</p>
+      <a href="https://thatomachaba8-cmyk.github.io/todo-app/" target="_blank">View Project</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+
+    <form class="contact-form" action="https://formspree.io/f/xlgonnzz" method="POST">
+
+  <input type="text" name="name" placeholder="Your Name" required>
+
+  <input type="email" name="email" placeholder="Your Email" required>
+
+  <textarea name="message" placeholder="Your Message" required></textarea>
+
+  <button type="submit">Send Message</button>
+
+
+</form>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+<script src="script.js"></script>
+
+<a href="https://wa.me/27766445484" target="_blank" class="whatsapp">💬</a>
+</body>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2 id="modal-title"></h2>
+    <p id="modal-desc"></p>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="script.js"></script>
+
+</html>
